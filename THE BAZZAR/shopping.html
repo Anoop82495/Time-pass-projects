@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+ <script>
+ $( document ).ready(function() {
+ $( "#searchbtn" ).click(function() {
+ alert("OUT OF STOCK" +$("#searchtxt").val() + " Category : " + $("#categorysel").children(":selected").html());
+ });
+ $("#home").click(function(){
+    alert("OPENED");
+ })
+});
+ </script>
+ <title>THE Bazzar</title>
+ <style>
+    body{
+        background-image:linear-gradient(90deg,white,black);
+        
+    }
+    a{
+        background-color:rgba(85, 71, 70, 0.863);
+        color:white;
+    }
+ </style>
+ </head>
+ <body>
+     <h1 style="text-align:center;">Welcome to <b>THE BAZZAR</b></h1>
+ <p style="text-align:center;font-size:30px;"></p>
+ <table>
+ <tr>
+ <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJROC8GR1NE_xvtSvJwYER6jJOMEEGS0AOw&usqp=CAU" alt="my e-shop logo" width="600px"
+height="350px"></td>
+ <td><form> <input id="searchtxt" type="text" placeholder="Search..">
+</form></td>
+ <td>
+ <select id="categorysel">
+ <option>All</option>
+ <option>Cloth</option>
+ <option>Grocery</option>
+ <option>HEALTH & BEAUTY </option>
+ <option>Sport And Toy</option>
+ <option>ELECTRONIC</option>
+ <option>Home And Kitchen</option>
+ </select>
+ </td>
+ <td><button id="searchbtn">Search</button></td>
+ <td><i style="color:white;"> [ 0 ] Items in your cart </i> </td>
+ <td><a id="home" style="background-color: rgba(85, 71, 70, 0.863);color: white;padding: 1em 1em;
+ text-decoration: none; text-transform:uppercase;" href="#">Home</a></td>
+ <tr>
+ <td><a style="padding:1em 1em;" href="specialofferrs.html">Special Offers</a></td>
+ <td><a style="padding:1em 1em;"href="contact.html">Contact</a></td>
+ <td><a style="padding:1em 1em;" href="login.html">Login</a></td>
+ </tr>
+ </table>
+</body>
+</html>
